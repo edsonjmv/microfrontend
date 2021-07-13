@@ -10,6 +10,7 @@ export default () => {
     const { onParentNavigate } = mount(ref.current, {
       onNavigate: ({ pathname: nextPathname }) => {
         const { pathname } = history.location;
+
         if (pathname !== nextPathname) {
           history.push(nextPathname);
         }
