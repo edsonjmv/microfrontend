@@ -278,7 +278,7 @@ export default {
     Button,
     Column,
     DataTable,
-    Chart,
+    Chart
   },
   data() {
     return {
@@ -288,7 +288,7 @@ export default {
         { name: 'Rome', code: 'RM' },
         { name: 'London', code: 'LDN' },
         { name: 'Istanbul', code: 'IST' },
-        { name: 'Paris', code: 'PRS' },
+        { name: 'Paris', code: 'PRS' }
       ],
       dropdownCity: null,
       options: {
@@ -296,9 +296,9 @@ export default {
         header: {
           left: 'prev,next',
           center: 'title',
-          right: 'dayGridMonth,timeGridWeek,timeGridDay',
+          right: 'dayGridMonth,timeGridWeek,timeGridDay'
         },
-        editable: true,
+        editable: true
       },
       events: null,
       products: null,
@@ -311,7 +311,7 @@ export default {
           'April',
           'May',
           'June',
-          'July',
+          'July'
         ],
         datasets: [
           {
@@ -319,27 +319,27 @@ export default {
             data: [65, 59, 80, 81, 56, 55, 40],
             fill: false,
             backgroundColor: '#2f4860',
-            borderColor: '#2f4860',
+            borderColor: '#2f4860'
           },
           {
             label: 'Second Dataset',
             data: [28, 48, 40, 19, 86, 27, 90],
             fill: false,
             backgroundColor: '#00bb7e',
-            borderColor: '#00bb7e',
-          },
-        ],
-      },
+            borderColor: '#00bb7e'
+          }
+        ]
+      }
     };
   },
   methods: {
     formatCurrency(value) {
       return value.toLocaleString('en-US', {
         style: 'currency',
-        currency: 'USD',
+        currency: 'USD'
       });
-    },
-  },
+    }
+  }
 };
 </script>
 
